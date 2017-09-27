@@ -13,7 +13,7 @@
     </ul>
 </nav>
 <div class="posts index large-9 medium-8 columns content">
-    <h3><?= __('Posts') ?></h3>
+    <h3><?= __('Noticias') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
