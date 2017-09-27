@@ -1,0 +1,19 @@
+2017-09-21 12:32:18 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.authors' doesn't exist in C:\wamp64\www\blog\blog1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\wamp64\www\blog\blog1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'authors', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\wamp64\www\blog\blog1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('authors', Array)
+#2 C:\wamp64\www\blog\blog1\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('authors')
+#3 C:\wamp64\www\blog\blog1\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\wamp64\www\blog\blog1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 C:\wamp64\www\blog\blog1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\wamp64\www\blog\blog1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'authors', 'Authors')
+#7 C:\wamp64\www\blog\blog1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Authors')
+#8 C:\wamp64\www\blog\blog1\vendor\cakephp\bake\src\Shell\BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Authors')
+#9 C:\wamp64\www\blog\blog1\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('authors', 0)
+#10 C:\wamp64\www\blog\blog1\vendor\cakephp\bake\src\Shell\BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\wamp64\www\blog\blog1\vendor\cakephp\cakephp\src\Console\Shell.php(494): Bake\Shell\BakeShell->all('authors')
+#12 C:\wamp64\www\blog\blog1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\wamp64\www\blog\blog1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
